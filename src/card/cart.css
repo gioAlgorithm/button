@@ -1,0 +1,115 @@
+.main{
+    height: 100%;
+}
+.cart-container{
+    width: 700px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 23px;
+    background-color: rgb(240, 240, 240);
+    margin-top: 100px;
+    padding: 30px;
+}
+.cart-card{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 0.5px solid rgb(202, 192, 192);
+}
+
+.cart-name{
+    font-size: 18px;
+}
+.cart-power{
+    color: red;
+    margin-top: 0;
+    font-size: 22px;
+}
+.cart-image{
+    width: 220px;
+    height: auto;
+    margin-bottom: 10px;
+}
+/* buttons */
+.item-btns{
+    display: flex;
+    font-size: 14px;
+}
+.attribute-btns input{
+    display: none;
+}
+.attribute-btns  label{
+    position: relative;
+    border: 1px solid black;
+    margin-right: 12px;
+    height: 45px;
+    width: 63px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+.attribute-btns  input:checked + label{
+    background-color: black;
+    color: white;
+    
+}
+/* button */
+.go-to-card {
+    margin-top: 100px;
+    background-color: green;
+    width: 340px;
+    height: 210px;
+    border-radius: 22px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.go-to-card a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 50px;
+}
+.image-qty{
+    display: flex;
+}
+.plus-minus{
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.plus-minus h4{
+    font-size: 25px;
+}
+.plus-minus button{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.plus-minus button:hover{
+    background-color: black;
+    color: rgb(240, 240, 240);
+}

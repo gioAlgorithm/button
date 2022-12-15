@@ -1,0 +1,103 @@
+.main{
+    display: flex;
+}
+.product-card{
+    margin-top: 100px;
+    width: 700px;
+    height: auto;
+    border-radius: 23px;
+    background-color: rgb(240, 240, 240);
+}
+
+/* card css */
+.card{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.anime-name{
+    font-size: 25px;
+    font-weight: 800;
+}
+.card-name{
+    font-size: 25px;
+    font-weight: 400;
+}
+.height{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.power{
+    font-size: 30px;
+    color: red;
+}
+.character-images{
+    height: auto;
+    width: 250px;
+}
+.attribute-name{
+    font-size: 16px;
+}
+.add-btn{
+    border: solid black 1px;
+    padding: 5px 10px;
+}
+.add-btn:hover{
+    background-color: black;
+    color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+/* button css */
+.item-btns{
+    display: flex;
+    font-size: 14px;
+}
+input{
+    display: none;
+}
+label{
+    position: relative;
+    border: 1px solid black;
+    margin-right: 12px;
+    height: 45px;
+    width: 63px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+input:checked + label{
+    background-color: black;
+    color: white;
+    
+}
+
+/* go to cart */
+.go-to-cart {
+    margin-top: 100px;
+    background-color: green;
+    width: 340px;
+    height: 210px;
+    border-radius: 22px;
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.go-to-cart a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 50px;
+}

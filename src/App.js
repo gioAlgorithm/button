@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Cart from "./card/Cart"
+import ProductCard from "./card/ProductCard"
+import React from "react"
+import { Routes, Route } from "react-router-dom"
+import SharedLayout from "./sharedLayout"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App(){
+  return(
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<ProductCard />} />
+        <Route path="cart" element={<Cart />} />
+      </Route>
+    </Routes>
+  )
 }
-
-export default App;
